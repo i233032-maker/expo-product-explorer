@@ -2,6 +2,7 @@ import * as Device from 'expo-device';
 import { Platform, StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { Link } from 'expo-router';
 import { AnimatedIcon } from '@/components/animated-icon';
 import { HintRow } from '@/components/hint-row';
 import { ThemedText } from '@/components/themed-text';
@@ -37,6 +38,9 @@ export default function HomeScreen() {
           <ThemedText type="title" style={styles.title}>
             Welcome to&nbsp;Expo
           </ThemedText>
+          <ThemedText type="title" style={{ textAlign: 'center', marginTop: 10 }}>
+            Muhammad Hamza Khan - Roll 23I-3032
+          </ThemedText>
         </ThemedView>
 
         <ThemedText type="code" style={styles.code}>
@@ -53,6 +57,9 @@ export default function HomeScreen() {
             title="Fresh start"
             hint={<ThemedText type="code">npm run reset-project</ThemedText>}
           />
+          <Link href="/products" style={{ marginTop: 10, textAlign: 'center', color: '#0a7ea4', fontSize: 16, fontWeight: 'bold' }}>
+            View Products List
+          </Link>
         </ThemedView>
 
         {Platform.OS === 'web' && <WebBadge />}

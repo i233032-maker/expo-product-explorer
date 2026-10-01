@@ -19,7 +19,6 @@ const PRODUCTS: Product[] = [
 ];
 
 export default function ProductsScreen() {
-  const breakingError: number = "intentionally broken";
   const renderItem = ({ item }: { item: Product }) => (
     <ThemedView type="backgroundElement" style={styles.productCard}>
       <ThemedText type="subtitle">{item.name}</ThemedText>

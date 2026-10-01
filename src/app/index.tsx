@@ -37,6 +37,9 @@ export default function HomeScreen() {
           <ThemedText type="title" style={styles.title}>
             Welcome to&nbsp;Expo
           </ThemedText>
+          <ThemedText type="title" style={{ textAlign: 'center', marginTop: 10 }}>
+            Muhammad Hamza Khan - Roll 23I-3032
+          </ThemedText>
         </ThemedView>
 
         <ThemedText type="code" style={styles.code}>

@@ -21,7 +21,7 @@ const PRODUCTS: Product[] = [
 export default function ProductsScreen() {
   const renderItem = ({ item }: { item: Product }) => (
     <ThemedView type="backgroundElement" style={styles.productCard}>
-      <ThemedText type="defaultSemiBold">{item.name}</ThemedText>
+      <ThemedText type="subtitle">{item.name}</ThemedText>
       <ThemedText>{item.price}</ThemedText>
     </ThemedView>
   );
